@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TextRecognitionActivity">
+
+    <ImageView
+        android:id="@+id/ivTextRecognition"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvRecognizedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/ivTextRecognition"
+        app:layout_constraintStart_toStartOf="@+id/ivTextRecognition"
+        app:layout_constraintTop_toBottomOf="@+id/ivTextRecognition" />
+
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pick Image"
+        app:layout_constraintEnd_toEndOf="@+id/ivTextRecognition"
+        app:layout_constraintStart_toStartOf="@+id/ivTextRecognition"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecognizedText" />
+
+    <Button
+        android:id="@+id/btnFindText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Find Text"
+        app:layout_constraintEnd_toEndOf="@+id/btnPickImage"
+        app:layout_constraintStart_toStartOf="@+id/btnPickImage"
+        app:layout_constraintTop_toBottomOf="@+id/btnPickImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
